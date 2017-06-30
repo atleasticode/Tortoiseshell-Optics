@@ -1,0 +1,246 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Navigation */
+nav {
+  justify-content: space-between;
+  background-color: cadetblue;
+  color: white;
+}
+
+#logo {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img {
+  height: 1.5rem;
+  margin: 0 1rem 0 2rem;
+}
+
+#logo h1 {
+  white-space: nowrap;
+}
+
+.nav-items {
+  padding: 1rem 0;
+}
+
+.nav-items span {
+  padding: 0 2rem;
+}
+
+.mobile {
+  padding: 1rem 0;
+  display: none;
+}
+
+.mobile span {
+  padding: 0 2rem;
+}
+
+/* Jumbo */
+#jumbo {
+  background-image: url(../img/glasses-bg.png);
+  background-size: cover;
+  background-position: center center;
+  height: 31rem;
+  padding-top: 1rem;
+}
+
+#jumbo-copy {
+  padding: 1.5rem 5rem;
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  right: -2rem;
+  float: right;
+}
+
+#jumbo-copy h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Perks */
+.perks {
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.perk {
+  text-align: center;
+  height: 8rem;
+  width: auto;
+  margin: 0 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#exams img {
+  width: 3.5rem;
+}
+
+#fittings img {
+  width: 5rem;
+}
+
+#delivery img {
+  width: 5rem;
+}
+
+/* Philosophy */
+.philosophy {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+
+.philosophy-item {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.heading {
+  width: 10rem;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: azure;
+  padding: 4rem;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 960px) and (min-width: 722px) {
+  .container {
+    width: 100%;
+  }
+
+  #jumbo {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  #jumbo-copy {
+    padding: 0.75rem 4rem;
+    top: 5rem;
+    right: 2rem;
+  }
+
+  #jumbo-copy h2 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 721px) {
+  .container {
+    width: 100%;
+  }
+
+  p,h3 {
+    font-size: 0.77rem;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+
+  .mobile span {
+    color: white;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  #logo-copy {
+    display: none;
+  }
+
+  #jumbo {
+    height: 17rem;
+    width: 100%;
+    background-position: left center;
+    padding-top: 0;
+  }
+
+  #jumbo-copy {
+    float: left;
+    top: 9rem;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  #jumbo-copy h2 {
+    font-size: 1rem;
+  }
+
+  .perks {
+    flex-direction: column;
+    margin-bottom: 3.77rem;
+  }
+
+  .perk {
+    margin-bottom: 1.54rem;
+  }
+
+  .philosophy {
+    flex-direction: column;
+  }
+
+  .philosophy-item {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .philosophy-item p {
+    padding: 0 0.5rem;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  footer img {
+    margin: 0 auto;
+  }
+}
